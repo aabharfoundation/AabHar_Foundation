@@ -77,8 +77,8 @@ h1, h2, h3, h4, h5, h6 {
 .social-icons {
     position: fixed;
     top: 50%; /* Vertically center the icons */
-    right: 20px; /* Position it 20px from the right edge */
-    transform: translateY(-50%); /* Adjust for vertical centering */
+    right: 10px; /* Position it 20px from the right edge */
+    transform: translateY(-90%); /* Adjust for vertical centering */
     display: flex;
     flex-direction: column; /* Arrange the icons vertically */
     gap: 15px; /* Space between icons */
