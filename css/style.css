@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Styling for Main Heading */
 .main-heading {
-    text-align: center; /* Centers the entire text block */
+    text-align: left; /* Centers the entire text block */
     font-family: 'Poppins', sans-serif; /* Default fallback */
     line-height: 1.2; /* Adjust spacing between lines */
     margin: 20px auto;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.2rem; /* Adjust the size as needed */
     font-weight: bold; /* Make it visually distinct */
     margin: 5px 0; /* Add spacing around the subheading */
-    font-family: 'Mangal', 'Shree Devanagari 714', serif; /* Suitable Marathi fonts */
+    font-family: 'Poppins', serif; /* Suitable Marathi fonts */
     color: #555; /* Subtle color for differentiation */
 }
 
