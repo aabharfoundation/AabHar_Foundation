@@ -80,69 +80,107 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
-/* Styling for आब्हार */
-.main-heading .main-text {
-    font-size: 3rem; /* Adjust size for visibility */
+/* Main container styling aligned to the left */
+.animated-heading {
+    text-align: left; /* Align text to the left */
+    font-family: 'Shree Devanagari 714', serif; /* Marathi-compatible font */
+    position: relative;
+    overflow: hidden;
+    margin-left: 2rem; /* Add some spacing from the left */
+}
+
+/* Line styling */
+.line {
+    width: 50%; /* Adjust width to suit the design */
+    display: flex;
+    justify-content: flex-start; /* Align lines to the left */
+    position: relative;
+    margin: 10px 0;
+}
+
+.line .line-text {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: scaleX(0);
+    animation: lineGrow 1s ease-out forwards;
+}
+
+/* Main text styling */
+.main-text {
+    font-size: 3.5rem; /* Adjust size for visibility */
     font-weight: bold;
     color: #333;
-    animation: slideDown 1.5s ease-out; /* Slide in animation */
+    position: relative;
+    animation: slideUp 1.5s ease-out forwards;
 }
 
-/* Styling for राजू आबा हारदे */
-.main-heading .subheading {
-    font-size: 2.5rem; /* Slightly smaller than main heading */
-    font-weight: bold;
-    color: #ff5733; /* Contrast color for pop-out effect */
-    margin: 0.5rem 0;
-    background-color: #f3f3f3; /* Add background for pop effect */
-    padding: 0.5rem;
-    border-radius: 10px;
-    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3); /* Pop-out effect */
-    animation: popUp 1s ease-out 0.5s; /* Delayed animation */
-    display: inline-block;
-}
-
-/* Styling for फाऊंडेशन */
-.main-heading .foundation-text {
+/* Subheading styling */
+.subheading {
     font-size: 2rem;
     font-weight: bold;
-    color: #555;
-    animation: slideUp 1.5s ease-out; /* Slide in animation */
+    color: #ff5733; /* Highlighted color */
+    background-color: #f3f3f3; /* Pop-out effect */
+    padding: 0.5rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: inline-block;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    animation: popOut 1s ease-out forwards;
 }
 
-/* Keyframes for animations */
-@keyframes slideDown {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+/* Foundation text styling */
+.foundation-text {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    animation: slideDown 1.5s ease-out forwards;
 }
 
+/* Animations */
 @keyframes slideUp {
-    0% {
+    from {
         transform: translateY(100%);
         opacity: 0;
     }
-    100% {
+    to {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
-@keyframes popUp {
-    0% {
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes lineGrow {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes popOut {
+    from {
         transform: scale(0.8);
         opacity: 0;
     }
-    100% {
+    to {
         transform: scale(1);
         opacity: 1;
     }
 }
+
 
 p {
   margin-top: 0;
