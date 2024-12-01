@@ -8691,7 +8691,7 @@ h1, h2, h3, h4, h5,
 
 .hero-wrap {
   width: 100%;
-  height: 100%;
+  height: 50vh;
   position: inherit;
   background-size: cover;
   background-repeat: no-repeat; }
